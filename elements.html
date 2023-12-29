@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Talk2Drive|Purdue Digital Twin Lab</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Talk2Drive</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="elements.html">Technical Details</a></li>
+							<li><a href="generic.html">Demos</a></li>
+							<!-- <li class="active"><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<!-- <ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul> -->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Technical Details<br /></h1>
+								</header>
+								<!-- Text stuff -->
+									<!-- <h2>Text</h2>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
+									Finally, this is a <a href="#">link</a>.</p> -->
+									<hr />
+									<h2>Talk2Drive Framework Architecture</h2>
+									Talk2Drive framework architecture. A human's spoken instructions are processed by cloud-based LLMs, 
+									which synthesize contextual data C from weather, traffic conditions, and local traffic rules information. 
+									The LLMs generate executable codes P that are communicated to the vehicle's Electronic Control Unit (ECU).
+									 These codes operate the actuation of vehicle controls, ensuring that the human's intent is translated into safe
+									  and personalized driving actions. A memory module archives every command I, its resultant codes P, and 
+									  subsequent user feedback F, ensuring continuous refinement of the personalized driving experience.
+									<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+									<hr />
+									<header>
+										<h2>Autonomous driving function modules and message flow</h2>
+										<!-- <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p> -->
+									</header>
+									<p>  <span class="image left"><img src="images/pic08.jpg" alt="" /></span>The initial step in the Talk2Drive framework involves directly receiving arbitrary verbal commands from humans. Utilizing 
+										cutting-edge voice recognition technology, specifically the open-source API Whisper, these verbal commands are accurately 
+										captured and then translated into textual instructions (I).The LLMs then generate corresponding codes (P) based on this
+										 interpretation.The generated codes P are sent back from the cloud to the vehicle's Electronic Control Unit (ECU), where they are executed.
+										The code execution involves adjusting basic driving behaviors and various parameters in the vehicle’s planning and control 
+										systems. After ECU executes these codes, the vehicle's actuators control the throttle, brakes, gear selection, and steering 
+										to realize the driving behavior specified by the LLM-generated codes through the CAN bus and drive-by-wire system.
+										</p>
+										<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+									<hr />
+									</header>
+										<h2>Vehicle Setup</h2>
+										<div class="row">
+											<div class="col-6 col-12-small">
+	
+												<h3>Sensors</h3>
+												<ul>
+													<li>One VLP-32C Lidar.</li>
+													<li>Two mako G-319C Cameras.</li>
+													<li>Two Logitech C920s In-Cabin Cameras.</li>
+													<li>Cradlepoint IBR900 Series Router with AT&T Sim Card.</li>
+												</ul>
+											</div>
+												<div class="col-6 col-12-small">
+
+													<h3>Spectra ECU</h3>
+													<ul>
+														<li>Intel I9-9900 9th Gen 3.10/5.0GHz Hexa-
+															core 65W Processor .</li>
+														<li>NVIDIA Quadro RTX-A4000
+															16GB GDDR6 140W GPU.</li>
+														<li>512GB SSD.</li>
+													</ul>
+												</div>
+											
+										<h3>Localization:</h3>
+										<p>3D-NDT Mapping</p>
+										<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+										<hr />
+											<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>500 Central Dr. POTR 127<br />
+									West Lafayette, IN 47907</p>
+							</section>
+							<!-- <section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section> -->
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">cancui@purdue.edu</a></p>
+							</section>
+							<section>
+								<h3>Lab website</h3>
+								<p><a href="https://purduedigitaltwin.github.io/">https://purduedigitaltwin.github.io/</a></p>
+								<!-- <ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul> -->
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Purdue DIgital Twin Lab</li><li>Design: <a href="https://cancui19.github.io/">Can Cui</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+								<!-- Lists -->
+									<!-- <h2>Lists</h2>
+									<div class="row">
+										<div class="col-6 col-12-small">
+
+											<h3>Unordered</h3>
+											<ul>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis lorem eleifend.</li>
+												<li>Felis feugiat dolore viverra.</li>
+												<li>Dolor pulvinar etiam.</li>
+											</ul>
+
+											<h3>Alternate</h3>
+											<ul class="alt">
+												<li>Dolor pulvinar etiam etiam.</li>
+												<li>Sagittis adipiscing eleifend.</li>
+												<li>Felis enim dolore viverra.</li>
+												<li>Dolor pulvinar etiam etiam.</li>
+											</ul>
+
+										</div>
+										<div class="col-6 col-12-small">
+
+											<h3>Ordered</h3>
+											<ol>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis at viverra.</li>
+												<li>Felis enim feugiat magna.</li>
+												<li>Etiam vel felis nullam.</li>
+												<li>Felis enim et tempus.</li>
+											</ol>
+
+											<h3>Icons</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											</ul>
+											<ul class="icons alt">
+												<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+											</ul>
+
+										</div>
+									</div>
+									<h3>Definition</h3>
+									<dl>
+										<dt>Item 1</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+										<dt>Item 2</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+										<dt>Item 3</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+									</dl>
+
+									<h3>Actions</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions small">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary fit">Default</a></li>
+												<li><a href="#" class="button fit">Default</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary small fit">Small</a></li>
+												<li><a href="#" class="button small fit">Small</a></li>
+											</ul>
+										</div><div class="row">
+												<div class="col-6 col-12-small">
+
+													<h3>Ordered</h3>
+													<ol>
+														<li>Dolor pulvinar etiam.</li>
+														<li>Etiam vel felis at viverra.</li>
+														<li>Felis enim feugiat magna.</li>
+														<li>Etiam vel felis nullam.</li>
+														<li>Felis enim et tempus.</li>
+													</ol>
+												</div>
+
+								<!-- Blockquote -->
+									<!-- <h2>Blockquote</h2>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+
+									<hr /> -->
+
+								<!-- Table -->
+							
+
+	</body>
+</html>
